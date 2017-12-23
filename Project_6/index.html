@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Ewert|Open+Sans:300,300i,400,800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+
+    <title>Board Game</title>
+</head>
+
+<body>
+<div id="board"></div>
+
+<div id="game-ui">
+    <div id="player1-controls" class="player-controls">
+        <div class="player-name"><h1>Warrior 1</h1></div>
+        <div class="player-status">
+            <div class="player-weapon-icon"></div>
+            <div class="player-text-info">
+                <div class="player-score"></div>
+                <div class="player-weapon-info"></div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div id="player2-controls" class="player-controls">
+        <div class="player-name"><h1>Warrior 2</h1></div>
+        <div class="player-status">
+            <div class="player-weapon-icon"></div>
+            <div class="player-text-info">
+                <div class="player-score"></div>
+                <div class="player-weapon-info"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="combat-buttons">
+        <button id="a" type="button" name="attack">Attack</button>
+        <button id="b"  type="button" name="defense">Defend</button>
+    </div>
+    <div id="control-buttons">
+        <button class="button" type="button" name="playGame">Restart</button>
+    </div>
+
+</div>
+
+<!-- Jquery and sweetalert library-->
+<script src="jquery-3.2.1.min.js"></script>
+<script src="app/sweetalert.min.js"></script>
+<!--Importing map file-->
+<script type="text/javascript" src="map/cell.js"></script>
+<script type="text/javascript" src="map/board.js"></script>
+<script type="text/javascript" src="map/weapon.js"></script>
+<script type="text/javascript" src="map/player.js"></script>
+<!--Importing app file-->
+<script type="text/javascript" src="app/loadGame.js"></script>
+<script type="text/javascript" src="app/global.js"></script>
+<script type="text/javascript" src="app/Move.js"></script>
+</body>
+</html>

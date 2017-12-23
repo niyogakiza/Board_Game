@@ -1,0 +1,156 @@
+body{
+	background-image: url(../images/back2.jpg);
+	display: inline-flex;
+	align-content:center;
+	position: fixed;
+	margin-left: 400px;
+	opacity: 0.9;
+}
+
+#board {
+	width: 900px;
+	height: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	width: 1000px;
+	height: 90px;
+	margin: 0;
+}
+
+.cell {
+	display:inline-block;
+	box-sizing:border-box;
+	border: solid rgb(0, 0, 255) 2px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50%;
+	margin: 0;
+}
+
+.cell-accessible {
+	background-color: #32ff0c;
+}
+
+.cell-inaccessible {
+	background-image: url(../images/danger.png);
+}
+
+.cell-movement {
+	background-color: rgb(16, 9, 245);
+}
+
+#game-ui {
+
+	width: 500px;
+	height:900px;
+	margin: 0 300px 0 0;
+	display: table-column;
+	background-image: url(../images/back1.png);
+}
+
+.player-controls {
+	width: 250px;
+	height: 150px;
+	display: inline-flex;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.player-name,.player-text-info {
+	width: 220px;
+	height: 50px;
+	padding-bottom: 100px;
+	color: rgba(0, 0, 0, 0.99);
+	text-align: center;
+	margin: 0 0 -60px 60px;
+	font-family: 'Ewert', cursive,'Open Sans', sans-serif;
+
+}
+
+.player-status {
+
+    padding-bottom: 100px;
+
+}
+.player-weapon-icon {
+	display:inline-flex;
+	border: solid #800000 3px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50%;
+	margin: 0 0 0 20px;
+}
+.player-score {
+	height: 20px;
+	margin: 0 0 5px 2px;
+	color: rgba(53, 23, 255, 1);
+	font-weight: lighter;
+	font-family: helvetica sans-serif;
+}
+
+.player-weapon-info {
+	height: 45px;
+	color: #bd5d11;
+	font-weight: bold;
+	font-family: 'Ewert', cursive,'Open Sans', sans-serif;
+}
+.button{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin-left: 250px;
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 20px;
+	background-color: hsl(0, 100%, 50%);
+	color: white;
+}
+#a{
+	margin-right: 20px;
+	margin-left: 300px;
+}
+#combat-buttons button {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-top: 100px;
+	margin-left: 130px;
+	font-weight: bold;
+	font-size: 15px;
+	color: rgba(173, 24, 255, 0.95);
+	background-color: hsl(150, 100%, 50%);
+}
+.cell-weapon1 {
+	background: url(../images/weapon-1.png) no-repeat center;
+}
+
+.cell-weapon2 {
+	background: url(../images/weapon-2.png) no-repeat center;
+}
+
+.cell-weapon3 {
+	background: url(../images/weapon-3.png) no-repeat center;
+}
+
+.cell-weapon4 {
+	background: url(../images/weapon-4.png) no-repeat center;
+}
+
+.cell-weapon5 {
+	background: url(../images/weapon-5.png) no-repeat center;
+}
+
+.cell-weapon6 {
+	background: url(../images/weapon-6.png) no-repeat center;
+}
+
+.cell-player1 {
+	background: #FFF7A3 url(../images/Warrior.png) no-repeat center;
+}
+
+.cell-player2 {
+	background: #FFF7A3 url(../images/Warriorb.png) no-repeat center;
+}
